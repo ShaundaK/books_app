@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
   get "/books" => "books#index"
+  get "/books/:id" => "books#show"
  end
 end
