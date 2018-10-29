@@ -1,3 +1,6 @@
 class Api::BooksController < ApplicationController
-  render "index.json.jbuilder"
+  def index
+    @books = Book.all
+    render "index.json.jbuilder"
+  end
 end
